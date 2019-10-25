@@ -1,0 +1,2 @@
+Menu->administration->software sources->Add a new repository
+sudo install apt-get r-base-core

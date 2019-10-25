@@ -1,0 +1,22 @@
+mport matplotlib.pyplot as plt
+>>> fig = plt.figure()
+>>> ax = fig.add_subplot('111')
+>>> ax.plot([4,3,6,7,9,1,0],[84,32,57,12,67,12,46])
+[<matplotlib.lines.Line2D object at 0x7f4214e3ce90>]
+>>> plt.show()
+>>> ax.plot([4,3,6,7,9,1,0],[84,32,57,12,67,12,46],'-')
+[<matplotlib.lines.Line2D object at 0x7f4214eafe90>]
+>>> plt.show()
+>>> plt.show()
+>>> fig = plt.figure()
+>>> ax = fig.add_subplot('111')
+>>> ax.plot([4,3,6,7,9,1,0],[84,32,57,12,67,12,46],'-')
+[<matplotlib.lines.Line2D object at 0x7f4214df68d0>]
+>>> plt.show()
+>>> fig = plt.figure()
+>>> ax = fig.add_subplot('111')
+>>> ax.plot([4,3,6,7,9,1,0],[84,32,57,12,67,12,46],'o')
+[<matplotlib.lines.Line2D object at 0x7f4215493c10>]
+>>> fig = plt.figure()
+>>> plt.show()
+

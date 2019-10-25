@@ -1,0 +1,34 @@
+
+n 2.7.6 (default, Mar 22 2014, 22:59:56) 
+[GCC 4.8.2] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> myread = 'ATCGATACATTTAATCA'
+>>> myread[4]
+'A'
+>>> cdict = {'A':0,'T':0,'G':0,'C':0}
+>>> cdict[myread[4]] += 1
+>>> align_pos = 4
+>>> cdict[myread[align_pos]] = 4
+>>> cdict
+{'A': 4, 'C': 0, 'T': 0, 'G': 0}
+>>> cdict[myread[align_pos]] +1
+5
+>>> cdict
+{'A': 4, 'C': 0, 'T': 0, 'G': 0}
+>>> cdict[myread[align_pos]] += 1
+>>> cdict[myread[align_pos]] +1
+6
+>>> cdict[myread[align_pos]] += 1
+>>> cdict
+{'A': 6, 'C': 0, 'T': 0, 'G': 0}
+>>> myread2 = 'ATCGGTCAG'
+>>> mypos2 = 2
+>>> cdict[myread2[align_pos2]] += 1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'align_pos2' is not defined
+>>> cdict[myread2[mypos2]] += 1
+>>> cdict
+{'A': 6, 'C': 1, 'T': 0, 'G': 0}
+>>> 
+

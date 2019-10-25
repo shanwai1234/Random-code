@@ -1,0 +1,9 @@
+intersect_dict = {}
+
+for x in range(1,11):
+	intersect_dict["{0}".format(x)] = Intersecter()
+
+
+intersect_dict['1'].add_interval(Interval(5,10))
+a = intersect_dict['2'].find(1,20)
+len(a)
